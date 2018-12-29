@@ -38,11 +38,11 @@ namespace InfernalRobotics.Module
         [KSPField(isPersistant = true)] public bool limitTweakableFlag = false;
 
         [KSPField(isPersistant = true, guiActive = true, guiActiveEditor = true, guiName = "Max", guiFormat = "F2", guiUnits = ""), 
-            UI_FloatEdit(minValue = -360f, maxValue = 360f, incrementSlide = 0.01f, incrementSmall = 0.5f, incrementLarge = 1f, scene = UI_Scene.All, sigFigs = 2)] 
+            UI_FloatEdit(minValue = -360f, maxValue = 360f, incrementSlide = 0.01f, incrementSmall = 1f, incrementLarge = 22.5f, scene = UI_Scene.All, sigFigs = 2)] 
         public float maxTweak = 360;
 
         [KSPField(isPersistant = true, guiActive = true, guiActiveEditor = true, guiName = "Min", guiFormat = "F2", guiUnits = ""), 
-            UI_FloatEdit(minValue = -360f, maxValue = 360f, incrementSlide = 0.01f, incrementSmall = 0.5f, incrementLarge = 1f, scene = UI_Scene.All, sigFigs = 2)] 
+            UI_FloatEdit(minValue = -360f, maxValue = 360f, incrementSlide = 0.01f, incrementSmall = 1f, incrementLarge = 22.5f, scene = UI_Scene.All, sigFigs = 2)] 
         public float minTweak = 0;
 
         /*[KSPField(isPersistant = true, guiActive = false, guiActiveEditor = false, guiName = "Spring Power", guiFormat = "0.00"), 
